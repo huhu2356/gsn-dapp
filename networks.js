@@ -16,6 +16,12 @@ module.exports = {
         mnemonic, `https://rinkeby.infura.io/v3/${projectId}`
       ),
       networkId: 4,
+    },
+    rootStockTestnet: {
+      provider: () => new HDWalletProvider(
+        mnemonic, 'https://public-node.testnet.rsk.co'
+      ),
+      networkId: 31,
     }
   },
 };
