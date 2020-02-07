@@ -1,0 +1,101 @@
+{
+  "contracts": {
+    "Counter": {
+      "address": "0xe282A0d06E402A41fBA45F96367f840964F1651a",
+      "constructorCode": "6080604052610b6f806100136000396000f3fe",
+      "bodyBytecodeHash": "62fca0d6180530e813e5f28dd766378a5948f5d7e733d96d80b1b0738836bb38",
+      "localBytecodeHash": "3f43847ae5dc0c91654587699143ea08c70d6b8eac067ccd39a625a45cb306ff",
+      "deployedBytecodeHash": "3f43847ae5dc0c91654587699143ea08c70d6b8eac067ccd39a625a45cb306ff",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initialized",
+          "astId": 695,
+          "type": "t_bool",
+          "src": "757:24:4"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "initializing",
+          "astId": 697,
+          "type": "t_bool",
+          "src": "876:25:4"
+        },
+        {
+          "contract": "Initializable",
+          "path": "@openzeppelin/upgrades/contracts/Initializable.sol",
+          "label": "______gap",
+          "astId": 753,
+          "type": "t_array:50<t_uint256>",
+          "src": "1951:29:4"
+        },
+        {
+          "contract": "GSNRecipient",
+          "path": "@openzeppelin/contracts-ethereum-package/contracts/GSN/GSNRecipient.sol",
+          "label": "_relayHub",
+          "astId": 67,
+          "type": "t_address",
+          "src": "1133:25:1"
+        },
+        {
+          "contract": "Counter",
+          "path": "contracts/Counter.sol",
+          "label": "value",
+          "astId": 761,
+          "type": "t_uint256",
+          "src": "147:20:5"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "gsn-dapp/Counter": [
+      {
+        "address": "0xe77899Bd49d2be3dB19084b4E9bC731E6485f45C",
+        "version": "1.0.0",
+        "implementation": "0xe282A0d06E402A41fBA45F96367f840964F1651a",
+        "admin": "0x071063c53aD10b2e487e5e23Ea8d1d63aCe1257E",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.0",
+  "proxyAdmin": {
+    "address": "0x071063c53aD10b2e487e5e23Ea8d1d63aCe1257E"
+  }
+}
